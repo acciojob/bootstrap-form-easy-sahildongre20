@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>AccioJob Internship Application</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <h2>AccioJob Internship Application</h2>
+        <form>
+            <div class="form-group">
+                <label for="first-name-input">First Name</label>
+                <input type="text" class="form-control" id="first-name-input" required>
+                <div class="invalid-feedback">
+                    Please enter your first name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="last-name-input">Last Name</label>
+                <input type="text" class="form-control" id="last-name-input" required>
+                <div class="invalid-feedback">
+                    Please enter your last name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email-input">Email</label>
+                <input type="email" class="form-control" id="email-input" required>
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="college-input">College Name</label>
+                <input type="text" class="form-control" id="college-input" required>
+                <div class="invalid-feedback">
+                    Please enter your college name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="roll-no-input">Roll No</label>
+                <input type="text" class="form-control" id="roll-no-input" required>
+                <div class="invalid-feedback">
+                    Please enter your roll number.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="graduation-year-select">Graduation Year</label>
+                <select class="form-control" id="graduation-year-select">
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                </select>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+                <label class="form-check-label" for="conditions-checkbox">I accept the terms and conditions</label>
+                <div class="invalid-feedback">
+                    You must accept the terms and conditions to submit the form.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 </body>
-
 </html>
